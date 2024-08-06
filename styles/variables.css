@@ -8,5 +8,8 @@
   --title-color: #db00ff;
   --accent-color: #ff0070;
   --bg-color: #000028;
-  --accent-font-size: 116px;
+  --main-font: 'IBM Plex mono', serif;
+  --main-font-size: 18px;
+  --bg-image: url(/images/cover-image-dark.png);
+  --basic-offset: 10px;
 }
