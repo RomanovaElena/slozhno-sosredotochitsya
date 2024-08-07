@@ -11,5 +11,7 @@
   --main-font: 'IBM Plex mono', serif;
   --main-font-size: 18px;
   --bg-image: url(/images/cover-image-dark.png);
-  --basic-offset: 10px;
+  --basic-padding: 10px;
+  --basic-gap: 20px;
+  --basic-margin: 50px;
 }
