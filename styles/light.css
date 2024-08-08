@@ -9,4 +9,58 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --title-color: #ffc2e6;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --button-hover-color: #32312d66;
+  --bg-image: url(/images/cover-image-light.png);
+  --title-shadow-color: var(--accent-color, #ff8dcb);
+  --decor-color: var(--text-color, #353430);
+  --button-color: var(--text-color, #353430);
+  --heading-text-color: var(--text-color, #353430);
 }
+
+.page.theme_light .header__decoration {
+  display: none;
+}
+
+.page.theme_light .header {
+  grid-auto-rows: 1fr min-content;
+}
+
+@media (prefers-color-scheme: light) {
+
+  .page.theme_auto {
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --button-hover-color: #32312d66;
+    --title-shadow-color: var(--accent-color, #ff8dcb);
+    --decor-color: var(--text-color, #353430);
+    --button-color: var(--text-color, #353430);
+    --heading-text-color: var(--text-color, #353430);
+    --bg-image: url(/images/cover-image-light.png);
+  }
+
+  .page.theme_auto .header__decoration {
+    display: none;
+  }
+
+  .page.theme_auto .header {
+    grid-auto-rows: 1fr min-content;
+  }
+}
+
+@media (width >= 1024px) {
+
+  .page.theme_light .title,
+  .page.theme_auto .title {
+    --accent-color: #ff0070;
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+}
+
