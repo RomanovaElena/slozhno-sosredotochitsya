@@ -21,7 +21,7 @@
     <!-- Блок HEADER -->
 
     <header class="header decorated-zone">
-      <span class="header__decoration"></span>
+      <span class="header__decoration" aria-hidden="true"></span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -58,13 +58,13 @@
 
     <!-- Блок MAIN -->
 
-    <main class="content">
+    <main">
 
       <!-- Блок QUESTIONS -->
 
-      <section class="questions">
+      <section class="section">
         <h2 class="heading">Почему сосредоточиться так сложно</h2>
-        <div class="questions__content">
+        <div class="section__content questions">
           <article>
             <h3 class="heading title-decor">Многозадачность</h3>
             <p class="content__paragraph">Особенно сложно сосредоточиться, когда задач 
@@ -72,7 +72,10 @@
               многозадачность, когда она так нужна вам (и 
               всем нанимающим менеджерам этого мира)? А дело 
               в том, что её просто не существует. Исследователи 
-              <a class="content__paragraph-link">выяснили</a>, 
+              <a class="content__paragraph-link"
+                href="https://www.dana.org/article/multicosts-of-multitasking/"
+                target="_blank"
+              > выяснили</a>, 
               что мозгу тяжело концентрироваться даже 
               на двух делах одновременно. А когда в поле внимания 
               попадает несколько важных задач, организм паникует 
@@ -101,9 +104,9 @@
 
       <!-- Блок REASONS -->
 
-      <section class="reasons">
+      <section class="section">
         <h2 class="heading">Что снижает концентрацию внимания?</h2>
-        <div class="reasons__content">
+        <div class="section__content reasons">
           <article>
             <h3 class="heading title-decor">Многозадачность</h3>
             <p class="content__paragraph">Как концентрация может снижаться из-за… 
@@ -145,11 +148,11 @@
 
       <!-- Блок ADVICES -->
 
-      <section class="advices">
+      <section class="section">
         <h2 class="heading">Как концентрироваться лучше, чем золотая рыбка 
           (то есть дольше трёх секунд)
         </h2>
-        <div class="advices__content">
+        <div class="section__content advices">
           <h3 class="heading title-decor">5 простых (на самом деле не очень) советов</h3>
           <article>
             <h4 class="heading title-decor title-article">Представьте небо и облака</h4>
@@ -178,7 +181,10 @@
             <h4 class="heading title-decor title-article">Прогуляйтесь</h4>
             <p class="content__paragraph">Или даже пробегитесь. Лучше найти парк или лес: один 
               эксперимент 
-              <a class="content__paragraph-link">показал</a>, 
+              <a class="content__paragraph-link"
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                target="_blank"
+                >показал</a>, 
               что созерцание природы повышает 
               концентрацию, в то время как после просмотра городских 
               пейзажей она наоборот понижается. Можно совместить 
@@ -211,17 +217,17 @@
 
       <!-- Блок GALLERY -->
 
-      <section class="gallery">
+      <section class="section">
         <h3 class="heading title-decor">А можно в картинках?</h3>
-        <div class="gallery__content">
+        <div class="section__content gallery">
           <img 
-            class="image image-horizontal"
+            class="image image-landscape"
             src="./images/sunset.png"
             alt="Изображение гор и моря на фоне заката в оранжево-фиолетовых цветах."
             loading="lazy"
           >
           <img 
-            class="image image-vertical"
+            class="image image-portrait"
             src="./images/ice-cream.png"
             alt="Изображение шариков мороженого с фруктами, вафельными трубочками и 
               украшениями в желтой миске. Шарики мороженого изображены с лицами, с 
@@ -229,26 +235,26 @@
             loading="lazy"
           >
           <img  
-            class="image image-vertical"
+            class="image image-portrait"
             src="./images/tape.png"
             alt="Изображение аудиокассеты в розово-фиолетовых тонах."
             loading="lazy"
           >
           <img 
-            class="image image-books"
+            class="image"
             src="./images/books.png"
             alt="Изображение стопки книг с яркими корешками, сложенными хаотично, 
               на фоне сиреневых обоев. На стопке книг стоит розовая чашка с блюдцем."
             loading="lazy"
           >
           <img 
-            class="image image-horizontal"
+            class="image image-landscape image-street"
             src="./images/street.png"
             alt="Изображение улицы в перспективе, с малоэтажными домами в азиатском 
             стиле. На домах вывески с иероглифами, над улицей тянутся провода 
             электричества."
             loading="lazy"
-          >
+          >       
         </div>
       </section>
     </main>
