@@ -5,7 +5,6 @@
   font-family: var(--main-font, sans-serif);
   font-size: var(--main-font-size, 18px);
   background-image: var(--bg-image, url(/images/cover-image-dark.png));
-  background-color: var(--bg-color, #000028);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -47,8 +46,8 @@
 .header__decoration::before {
   content: 'REC';
   position: absolute;
-  top: calc(var(--basic-padding, 10px) + 2px);
-  right: calc(var(--basic-padding, 10px) + 30px);
+  top: var(--basic-padding, 10px);
+  right: calc(var(--basic-padding, 10px) + 28px);
   color: var(--accent-color, #ff0070);
   font-weight: 400;
   font-size: var(--main-font-size, 18px);
@@ -63,8 +62,8 @@
   border-radius: 100%;
   box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
-  inline-size: 10px;
-  block-size: 10px;
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .header__theme-menu {
@@ -76,14 +75,14 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 10px;
-  margin-block-end: 5px;
+  margin-block-end: 4px;
   list-style-type: none;
 }
 
 .header__theme-menu-button {
   border: none;
-  padding: 0 13px;
   color: var(--button-color, #ff0070);
   font-family: inherit;
   font-size: inherit;
@@ -92,18 +91,15 @@
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-  max-inline-size: 70px;
-  min-block-size: 26px;
+  inline-size: 70px;
+  block-size: 26px;
   appearance: none;
-}
-
-.header__theme-menu-button_active {
-  outline: 1px solid var(--button-color, #ff0070);
-  pointer-events: none;
+  margin-top: 1px;
 }
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--button-hover-color, #ff007066);
+  outline-offset: -1px;
 }
 
 .header__theme-menu-button:focus {
@@ -111,7 +107,14 @@
 }
 
 .header__theme-menu-button:focus-visible {
+  outline: none;
   border-bottom: 1px solid var(--button-color, #ff0070);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--button-color, #ff0070);
+  outline-offset: -1px;
+  pointer-events: none;
 }
 
 .title {
@@ -170,20 +173,33 @@
 }
 
 .content__paragraph-link {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
   cursor: pointer;
 }
 
-.content__paragraph-link:hover {
+.content__paragraph-link:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 1px;
   border-bottom: 1px solid var(--text-color, #f1b2ce);
+  inline-size: calc(100% + 2px);
 }
 
 .content__paragraph-link:focus {
   outline: none;
 }
 
-.content__paragraph-link:focus-visible {
+.content__paragraph-link:focus-visible::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 5px;
+  inline-size: calc(100% + 2px);
+  block-size: 17px;
   outline: 1px solid var(--text-color, #f1b2ce);
 }
 
