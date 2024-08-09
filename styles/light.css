@@ -56,11 +56,10 @@
 }
 
 @media (width >= 1024px) {
-
+  
   .page.theme_light .title,
   .page.theme_auto .title {
     --accent-color: #ff0070;
     text-shadow: 4px 4px 0 var(--accent-color);
   }
 }
-
