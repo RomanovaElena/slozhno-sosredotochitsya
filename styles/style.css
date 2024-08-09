@@ -5,6 +5,7 @@
   font-family: var(--main-font, sans-serif);
   font-size: var(--main-font-size, 18px);
   background-image: var(--bg-image, url(/images/cover-image-dark.png));
+  background-color: var(--bg-color, #000028);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -16,7 +17,6 @@
   grid-auto-rows: min-content 1fr;
   margin-block-end: calc(var(--basic-margin, 50px) - var(--basic-padding, 10px));
   padding: var(--basic-padding, 10px);
-
   min-block-size: 100vh;
 }
 
