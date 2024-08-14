@@ -10,6 +10,7 @@
   --accent-text-color: #353430;
   --accent-color: #ff8dcb;
   --button-hover-color: #32312d66;
+  --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
   --title-shadow-color: var(--accent-color, #ff8dcb);
   --decor-color: var(--text-color, #353430);
@@ -29,6 +30,7 @@
     --accent-text-color: #353430;
     --accent-color: #ff8dcb;
     --button-hover-color: #32312d66;
+    --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
     --title-shadow-color: var(--accent-color, #ff8dcb);
     --decor-color: var(--text-color, #353430);

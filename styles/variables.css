@@ -4,7 +4,7 @@
 */
 
 :root {
-  --main-font: 'IBM Plex mono', serif;
+  --main-font: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --basic-padding: 10px;
   --basic-gap: 20px;
@@ -15,6 +15,7 @@
   --accent-text-color: #000028;
   --accent-color: #ff0070;
   --button-hover-color: #ff007066;
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --title-shadow-color: var(--accent-color, #ff0070);
   --decor-color: var(--accent-color, #ff0070);
